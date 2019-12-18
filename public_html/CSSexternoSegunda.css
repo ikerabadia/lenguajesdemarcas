@@ -1,0 +1,125 @@
+#table1,#table1 td{
+    border: 2px solid #CCC;
+    border-collapse: collapse;
+}
+#table2,#table2 td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#table3{
+    width: 100%;    
+}
+.cuerpo{
+    width: 80%;
+    text-align: justify;
+}
+.margen{
+    width: 10%;
+}
+#grajo{
+    text-align: center;
+}
+.margenvertical{
+    height: 50px;
+}
+#paisaje{
+    height: 300px;
+    width: 1249px;
+    border: solid black 5px;
+}
+#td1{
+    background-color:green;
+}
+#td2{
+    text-align: center;
+    background-color: red;
+}
+#td3{
+    text-align: center;
+}
+#td4{
+    text-align: center;
+}
+#td5{
+    color: blue;
+}
+#td6{
+    background-color: purple;
+}
+#table1 td{
+    width: 100px;
+    height: 100px;
+}
+#table2 td{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+#table2 th{
+  background-color: silver;
+}
+#table2 tr:nth-child(even) {
+  background-color: red;
+}
+#table2 tr:nth-child(odd) {
+  background-color: orangered;
+}
+#p1{
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+   font-size: 17px;
+}
+#p2{
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+font-size: 40px;
+}
+#fa1{
+    color: aquamarine;
+}
+#img1{
+    height: 195px;
+}
+#adios{
+    text-align: left;
+    vertical-align: bottom;
+}
+pre{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+#tr1{
+  height: 30px;
+  weight: 30px;
+  text-align: center;
+  font-size: 40px;
+  background-color: silver;
+}
+.horario{
+  background-color: silver;
+}
+div.figure p {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
