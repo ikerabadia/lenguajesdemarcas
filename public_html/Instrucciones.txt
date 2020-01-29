@@ -1,7 +1,0 @@
-Debo crear una web que incluya todos los elementos que demos en clase.
-
-FONTAWESOME
-https://fontawesome.com/v4.7.0/
-descargo esto lo descomprimo y cojo la carpeta entera y la meto en la carpeta del index de mi pagina
-una vez hecho eso ponemos en el head:
-<link rel="stylecheet" href="path/to/font-awesome/css/font-awesome.min.css">

@@ -1,0 +1,26 @@
+body{
+    background-color: #69B9B6;
+}
+.enlaces{
+    background: #FDA966;
+    border-color: #994807;
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    
+    background-image: -webkit-linear-gradient(top, #FFC190, #DF853C);
+    background-image: -moz-linear-gradient(top, #FFC190, #DF853C);
+    background-image: -ms-linear-gradient(top, #FFC190, #DF853C);
+    background-image: -o-linear-gradient(top, #FFC190, #DF853C);
+    background-image: linear-gradient(to bottom, #FFC190, #DF853C);
+}
+.enlaces:hover{
+    background: #DF853C;
+    cursor: pointer;
+    
+    background-image: -webkit-linear-gradient(top, #FDA966, #C0641B);
+    background-image: -moz-linear-gradient(top, #FDA966, #C0641B);
+    background-image: -ms-linear-gradient(top, #FDA966, #C0641B);
+    background-image: -o-linear-gradient(top, #FDA966, #C0641B);
+    background-image: linear-gradient(to bottom, #FDA966, #C0641B);
+}
