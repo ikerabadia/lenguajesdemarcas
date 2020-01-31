@@ -2,11 +2,17 @@ body{
     background-color: #69B9B6;
 }
 .enlaces{
+    font-family: sans-serif;
     background: #FDA966;
     border-color: #994807;
-    width: 100%;
+    width: 200px;
     height: 50px;
     font-size: 30px;
+    padding: 4px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
     
     background-image: -webkit-linear-gradient(top, #FFC190, #DF853C);
     background-image: -moz-linear-gradient(top, #FFC190, #DF853C);
