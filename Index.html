@@ -6,14 +6,15 @@
     <link type="text/css" href="CSSexterno.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src = "./javascript/funciones.js"></script>
   </head>
 
   <body>
       <div id="menuExterno">        
-          <iframe id="iframeMenuExterno"src="menu.html" name="Menu"></iframe>
+          <iframe id="iframeMenuExterno" src="menu.html" name="Menu"></iframe>
       </div>
       
-      <div id="menu">
+      <div id="menu" class="leftC">
         <h4 class="headersIndice">INDICE</h4>
         <a href="#I2">!DOCTYPE html</a><br>
         <a href="#I3">Tag &lt;html&gt;</a><br>
@@ -47,7 +48,9 @@
         <a href="#div">Bloques</a><br>
         <a href="#I37">Iframe</a><br>
     </div>
-      
+      <div id='mMenu'>
+        <a id='mMenuBoton' onclick="ocultaMenu()">&lt; &lt; &lt;</a>
+      </div>
       
       <div id="contenido">
         <h1 id="I0">PROYECTO DE LENGUAJES DE MARCAS IKER ABADIA.</h1>
@@ -84,9 +87,9 @@
              <h4>Tag &lt;meta&gt;</h4>
                <p>Este tag aportara la informacion sobre el tipo de codificacion con la que esta
                hecha la pagina, normalmente usaremos el "UTF-8" y su sintaxis se ve asi:<br>
-               <hr>
+               
                &lt;meta charset="UTF-8"&gt;
-               <hr>
+               
                </p>
         <h3 id="I5">Tag &lt;body&gt;</h3>
           <p>Basicamente es el cuerpo de la pagina, donde va a estar practicamente
@@ -110,20 +113,24 @@
             que usemos, es decir, todos los espacios, saltos de linea o tabulaciones. Simplemente
             se usara como el tag de parrafo pero en vez de escribir "p" escribiremos "pre".<br>
             Aqui se ve un ejemplo: <br>
+          </p>
             <pre>
               My Bonnie lies over the ocean.
               My Bonnie lies over the sea.
               My Bonnie lies over the ocean.
               Oh, bring back my Bonnie to me.
             </pre>
+            <p>
             Como puedes ver el formato cambia considerablemente.<br>
             </p>
         <h3 id="I9">Links</h3>
           <p>Un link sera lo que se usara para que en el caso de que sea clicado
              te redireccione a la pagina de destino su sintaxis es la siguiente: <br>
+          </p>
              <hr>
              &lt;a href="http://www.staggeringbeauty.com/"&gt;This is a link&lt;/a&gt;
              <hr>
+          <p>
              Y asi se veria el link de la anterior linea:    <a href="http://www.staggeringbeauty.com/">This is a link</a> <br>
              Y aqui dejo otro link de regalo:     <a href="http://chihuahuaspin.com/">Clica y disfruta :)</a><br>
              Cabe decir que los tags de links contienen ciertos atributos:<br>
@@ -132,9 +139,11 @@
            <br>
         <h3 id="I10">Imagenes HTML</h3>
           <p>Este tag sirve basicamente para insertar imagenes, su sintaxis es la siguiente: <br>
+            </p>
             <hr>
             &lt;img src="./Imagenes/embeces.jfif" alt="Embeces_la_bida_no_es_como_keremos_:C" width="480" height="364"&gt;
             <hr>
+          <p>
             - El atributo src indica el sitio donde se encuentra tu imagen, es decir, la ruta de la imagen.<br>
             - El atributo alt indica un texto que se mostrara en caso de que no se pueda mostrar la imagen o en
             caso de que la pagina este siendo leida por ejemplo para alguien ciego.<br>
@@ -147,15 +156,18 @@
         <h3 id="I11">Botones</h3>
         <p>Sirven para poner un boton que realizara una funcion, por ejemplo redirigirte a otra pagina cuando lo clicas.<br>
           Su sintaxis es:
+        </p>
           <hr>
            &lt;button&gt;Click me&lt;/button>
           <hr>
+        <p>
           Y se ve de la siguiente manera:
           <button>Click me im a button</button>
         </p>
         <h3 id="I12">Listas HTML</h3>
           <p>Las listas HTML son basicamente eso, una lista y puede ser de dos tipos, orderered list (ol) o unordered list (ul).<br>
             La sintaxis se veria de la siguiente manera:<br>
+          </p>
             <hr>
              &lt;ul&gt;<br>
               &lt;li&gt;Coffee &lt;/li&gt;<br>
@@ -169,6 +181,7 @@
               &lt;li&gt;Milk &lt;/li&gt;<br>
              &lt;/ol&gt;<br>
              <hr>
+          <p>
              El tag ol y ul son aquellos que distinguiran entre una ordered list y
              una unordered list.<br>
              Por otro lado tenemos el tag li que se incluye en cualquiera de los dos tipos
@@ -199,16 +212,18 @@
             <h4>Listas de descripción</h4>
               <p>Estas listas se usan para añadir descripciones de cada termino.Se usan los tag dl, dt, y dd.<br>
                  <img src="./img/Description.PNG" alt="Description_Example"><br>
+              </p>
                  <dl>
                     <dt>Coffee</dt>
                     <dd>- black hot drink</dd>
                     <dt>Milk</dt>
                     <dd>- white cold drink</dd>
                 </dl>
-              </p>
+              
             <h4>Listas HTML anidadas</h4>
               <p>Basicamente trata de anidar listas HTML entre si:<br>
                  <img src="./img/Anidadas.PNG" alt="Anidadas_Example"><br>
+              </p>
                  <ul>
                   <li>Coffee</li>
                     <li>Tea
@@ -218,18 +233,17 @@
                       </ul>
                     </li>
                    <li>Milk</li>
-                  </ul>
-              </p>
+                  </ul>              
             <h4>Listas de cuenta</h4>
             <p>Son listas en las se lleva la cuenta de cual es cada item mediante numeros. Hay que definir
                el numero de inicio que por defecto es el 0, se defina con "start".<br>
                <img src="./img/Cuenta.PNG" alt="Cuenta_Example"><br>
+            </p>
                 <ol start="50">
                   <li>Coffee</li>
                   <li>Tea</li>
                   <li>Milk</li>
-                </ol>
-             </p>
+                </ol>             
           <h3 id="I13">Saltos de linea &lt;br&gt;</h3>
           <p>Basicamente sirve para forzar un salto de linea y su sintaxis es la que se ve arriba.<br></p>
           <h3 id="I14">Separadores &lt;hr&gt;</h3>
@@ -279,22 +293,26 @@
           <p id="p05">Por otro lado tambien nos puede interesar <br>
             cambiar la alineacion, en este caso pondremos este<br>
           parrafo centrado, la sintaxis se puede ver aqui debajo:<br>
+          </p>
           <hr>
           &lt;/p style="text-align:center;"&gt;
           <hr>
-          </p>
-          </p>
+          
+          
         <h3 id="I18">El atributo title</h3>
           <p>Este atributo se usa en los parrafos de forma que el valor de este atributo se
           mostrara como un tooltip, es decir como un pequeño texto que se mostrara cuando
           el cursor este sobre dicho parrafo.<br>
           La sintaxis se veria de la siguiente forma:<br>
+          </p>
           <hr>
           &lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;
           <hr>
+          <p>
           Y se veria de la siguiente forma:<br>
-          <p title="Soy un tooltip">Esto es un parrafo con tooltip</p>
           </p>
+          <p title="Soy un tooltip">Esto es un parrafo con tooltip</p>
+          
         <h3 id="I19">Comillas</h3>
           <p>Hace falta decir diversas cosas sobre las comillas:<br>
           - Lo primero es decir que es aconsejable que los valores de los atributos los pongas
@@ -303,14 +321,15 @@
           no son mostradas deberas usar las comillas que sean distintas a las que no son vistas,
           es decir, si quieres usar comillas simples, las comillas padre deben ser dobles, y si quieres
           usar dobles, las comillas padre deben ser simples, de la siguiente forma:<br>
+          </p>
           <hr>
           &lt;p title='John "ShotGun" Nelson'&gt;Usar comillas dobles.&lt;/p&gt;<br>
           &lt;p title="John 'ShotGun' Nelson"&gt;Usar comillas simples.&lt;/p&gt;
           <hr>
-          Y se veria de la siguiente manera:<br>
+          <p>Y se veria de la siguiente manera:</p><br>
           <p title='John "ShotGun" Nelson'>Usar comillas dobles.</p><br>
           <p title="John 'ShotGun' Nelson">Usar comillas simples.</p><br>
-          </p>
+          
         <h2 id="I20">Tags de formateo de texto</h2>
           <h3>Tags &lt;b&gt; y &lt;strong&gt;</h3>
             <p>En este caso ambos tags mostraran el texto que contengan en negrita, pero semanticamente
@@ -337,11 +356,12 @@
             <p>Este tag define una cita, y mete el texto entre unas <q>comillas no seleccionables</q>.</p>
           <h3>Citas, tag &lt;blockquote&gt;</h3>
             <p>Este tag define una seccion citada desde otro sitio, aqui puedes ver la sintaxis:<br>
+            </p>
             <hr>
             &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;texto&lt;/blockquote&gt;
             <hr>
-            Y se ve asi:
-            </p>
+            <p>Y se ve asi:</p>
+            
             <blockquote cite="http://www.worldwildlife.org/who/index.html">
             For 50 years, WWF has been protecting the future of nature.
             The world's leading conservation organization,
@@ -352,6 +372,7 @@
           <h3>Tag &lt;address&gt;</h3>
             <p>Este tag sirve para Colocar informacion sobre el autor o poseedor de un documento o articculo
             la sintaxis seria la siguiente: <br>
+            </p>
             <hr>
             &lt;address&gt;<br>
             Written by John Doe.&lt;br&gt;<br>
@@ -361,8 +382,10 @@
             USA<br>
             &lt;/address&gt;
             <hr>
+            <p>
             Y asi es como se veria: <br>
             <br>
+            </p>
             <address>
             Written by John Doe.<br>
             Visit us at:<br>
@@ -370,23 +393,25 @@
             Box 564, Disneyland<br>
             USA
             </address>
-            </p>
+            
           <h3>Tag &lt;cite&gt;</h3>
             <p>Se suele usar para definir el titulo de un trabajo, por ejemplo, de un cuadro.<br>
             La sintaxis de este elemento se ve asi:<br>
             <hr>
              &lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.&lt;/p&gt;
             <hr>
-            Y se veria asi:<br>
-             <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-            </p>
+           <p>Y se veria asi:<br></p>
+           <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+            
           <h3>Tag bdo (Bi-Directional Override)</h3>
             <p>Se usa para que el texto escrito se muestre en la direccion que se quiera y se usa para
             por ejemplo determinados idiomas que se leen de derecha a izquierda.<br>
             Su sintaxis es la siguiente:<br>
+            </p>
             <hr>
             &lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;
             <hr>
+            <p>
             Y se ve de la siguiente forma:<br>
              <bdo dir="rtl">Este texto se mostrara de derecha a izquierda</bdo>
             </p>
@@ -396,9 +421,11 @@
             Aun asi hay que tener cuidado con los comentarios que se escriben por que aun que no se
             puedan ver en el navegador, si que se podran ver al inspeccionar elemento.
             Para hacer comentarios habra que meter el texto entre estos caracterES, aqui va la sintaxis:
+            </p>
             <hr>
             &lt;!-- Esto es un comentario --&gt;
             <hr>
+            <p>
             Debajo de esta frase, si inspeccionas elemento, podras ver un comentario.
             <!-- Esto es un comentario -->
             </p>
@@ -415,11 +442,13 @@
           <p>Para ver las sintaxis anteriores basta con inspeccionar elementos.</p>
           <h3 id="I23">Bordes</h3>
             <p>Se pueden poner bordes de colores a los textos y titulos, y la forma es la siguiente.
+            </p>
             <hr>
             &lt;p style="border:2px solid Tomato;"&gt;Hola mundo&lt;/p&gt;
             <hr>
             Y se veria de la siguiente forma:<br>
             <p id="p12">hola mundo</p>
+            <p>
             Los bordes de complementan con el padding que indica la separacion que debe haber entre
             el elemento y el borde.<br>
             Se define como <i>padding: 10px;</i> segun los pixeles que indiques
@@ -432,12 +461,13 @@
           <p>CSS es el acronimo de Cascading Style Sheets, es decir, plantillas de estilo en cascada.<br>
             Esto indica como se tiene que mostrar el documento HTML en el dispositivo de salida.<br>
             Puede ser aplicado al documento de 3 formas diferentes: <br>
+            </p>
             <ul>
             <li>Inline - Usando el atributo style en los elementos HTML.</li>
             <li>Internal - Usando un tag style en el head.</li>
             <li>External - Usando un archivo CSS externo.</li>
             </ul>
-          </p>
+          
           <h3>Inline CSS</h3>
             <p>Se utiliza para aplicar un estilo a un unico elemento usando el
             atributo style como ya hemos hecho anteriormente</p>
@@ -453,9 +483,11 @@
             en el documento HTML.<br>
             El enlace entre el HTML y el documento CSS se realiza en el head mediante un tag link cuya
             sintaxis es la siguiente: <br>
+            </p>
             <hr>
             &lt;link rel="stylesheet" href="styles.css"&gt;
             <hr>
+            <p>
             Y asi es como se veria una hoja de estilos CSS externa: <br>
             <img src="./img/CSS_External.PNG" alt="ExternalCSS_Example"><br>
             Se puede enlazar a 3 tipos de hojas de estilos CSS externas diferentes mediante un href en el tag de enlace link:<br>
@@ -477,13 +509,15 @@
             <img src="./img/Class.PNG" alt="Class_Example">
         <h2 id="I27">Links HTML</h2>
           <h3>Links locales</h3>
-            <p>Es un link que te envia a una pagina que esta en la misma carpeta que tu index:
+            <p>Es un link que te envia a una pagina que esta en la misma carpeta que tu index:</p>
               <hr>
               &lt;a href="PruebaLocalLinks.html"&gt;HTML prueba&lt;/a&gt;
               <hr>
+              <p>
               Y el link se veria asi:<br>
+              </p>
               <a href="PruebaLocalLinks.html">HTML prueba</a>
-            </p>
+            
           <h3 id="I28">Colores de links</h3>
             <p>El color de un link te da informacion sobre el, generalmentese usa un mismo estandar
             que es azul para los no visitados, moradospara los visitados y rojo para los activos.
@@ -551,9 +585,11 @@
             3. Una vez hecho eso ponemos en el head:<br>
             &lt;link rel="stylecheet" href="path/to/font-awesome/css/font-awesome.min.css"&gt;&lt;/p&gt;<br>
             Para insertar un icono de Font Awesome se debe usar un tag &lt;i&gt;&lt;/i&gt; con la siguiente sintaxis:<br>
+            </p>
             <hr>
             &lt;i class="fa fa-camera-retro"&gt;&lt;/i&gt; fa-camera-retro
             <hr>
+          <p>
             Y se veria asi:<br>
             <i class="fa fa-camera-retro fa-5x"></i> fa-camera-retro
           </p>
@@ -742,6 +778,11 @@
              en tu web de forma que puedes cambiar su html y cambiar el menu en 
              todas las paginas en las que se ha usado.
              Se le puede aplicar Height and Width, bordes, </p>
+        <h2>JAVASCRIPT</h2>
+            <p>JavaScript es un lenguaje de programacion que se usa para modificar las paginas web para que, por decirlo de alguna
+               manera, el usuario pueda interactuar con la pagina, añadiendole funcionalidades.<br>
+               Voy a empezar poniendo unos mensajes mediante alerts.</p>
+        <a class="boton" onclick="alert('Hola')">HazClick</a>
     </div>
   </body>
 </html>

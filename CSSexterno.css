@@ -45,22 +45,61 @@ h4{
 
 /*LAYOUT*/
 #menu{
-    left: 0px;
+    left: 15px;
     width: 250px;
     position: fixed;
     top: 152px;
     background: #69B9B6;
     border-right: solid #994807;
     height: 100%;
+    opacity: 1;
+    transition: left 2s;
 }
 
 #menu:a{
     background: #3E9A96;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#mMenu{
+    position: fixed;
+    left: 0px;
+    top:0px;
+    width: 15px;
+    height: 100%;
+    background-color: lightgrey;
+    border-right: 1px solid darkred;
+    align-content: center;
+    word-wrap: break-word;
+    
+}
+#mMenuBoton{
+    color: red;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: block;
+    word-wrap: break-word;
+    text-align: center;
+    padding-top: 450px;
+}
+#mMenuBoton:hover{
+    font-family: sans-serif;
+    cursor: pointer;
+    color:darkred;
+    text-decoration-line: none;
+    background: grey;
 }
 
 #contenido{
      position:absolute;
      left:300px;
+     transition: left 2s;
 }
 
 #iframeMenuExterno{
@@ -69,15 +108,18 @@ h4{
     position: fixed;
     height: 152px;
     margin-left: 0px;
-    left: 0px;
+    left: 15px;
     top: 0px;
     border-top: 0px;
     border-left: 0px;
+    transition: left 2s;
 }
 
 /*PARRAFOS*/
 p{
      font-family: 'Open Sans', sans-serif;
+     background: #fee1c9;
+    padding-left: 5px;
 }
 
 #p01{
@@ -201,8 +243,26 @@ a:active {
 }
 /*BLOQUES*/
 #div{
-  background-color: lightblue;
+    background-color: lightblue;
 }
 #span{
-  background-color: lime;
+    background-color: lime;
+}
+/*Botones*/
+.boton{
+    font-family: sans-serif;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: solid darkred;
+    background-image: linear-gradient(to bottom, #ff0000, #fe4949);    
+}
+.boton:hover{
+    font-family: sans-serif;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #d60000, #d23a3a);
+    color:white;
+    text-decoration-line: none;
 }
