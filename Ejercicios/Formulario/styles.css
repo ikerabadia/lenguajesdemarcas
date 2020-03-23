@@ -1,0 +1,154 @@
+@font-face {
+font-family: MinecraftTitle;
+src: url(fonts/minecraft_title.ttf);
+}
+
+@font-face {
+font-family: MinecraftConsoleBold;
+src: url(fonts/3_MinecraftBold1.otf);
+}
+
+@font-face {
+font-family: MinecraftConsole;
+src: url(fonts/1_MinecraftRegular1.otf);
+}
+
+body{
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+}
+
+#tituloTopDiv{
+    margin: 0px;
+    background-image: url(img/fondoTitle.jpg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-bottom: solid 3px black;
+    height: 16%;
+}
+
+#tituloTop{
+    font-family: MinecraftTitle;
+    text-align: center;
+    font-size: 45px;
+    background-color: hsl(232.5, 7.8%, 20%);
+    color: white;
+    font-weight: bold;
+}
+
+#formulario{
+    width: 40%;
+    margin-top: 8%;
+    margin-left: 29%;    
+}
+
+#formulariop{
+    margin-top: 3%;
+}
+
+#credenciales{
+    background-image: url(img/fondo2.jpg);
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: solid 3px black;
+    margin-top: 26%;
+}
+
+#fecha{
+    background-image: url(img/fondo2.jpg);
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: solid 3px black;
+    margin-top: 3%;
+}
+
+#memoria{
+    background-image: url(img/fondo2.jpg);
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: solid 3px black;
+    margin-top: 3%;
+}
+
+#jugadores{
+    background-image: url(img/fondo2.jpg);
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: solid 3px black;
+    margin-top: 3%;
+}
+
+#functions{
+    background-image: url(img/fondo2.jpg);
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: solid 3px black;
+    margin-top: 3%;
+}
+
+#areaTexto{
+    background-image: url(img/fondo2.jpg);
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    border: solid 3px black;
+    margin-top: 3%;
+    padding-right: 4%;
+    margin-bottom: 25px;
+}
+
+#credenciales input{
+    margin-left: 3%;
+}
+
+label{
+    font-family: MinecraftConsole;
+}
+
+p{
+    font-family: MinecraftConsoleBold;
+}
+
+#submit{
+    margin-left: 41%;
+    margin-top: 3%;
+    width: 21%;
+    height: 46px;
+    font-family: MinecraftTitle;
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 4px;
+    border: 2px solid black;
+    
+    background:linear-gradient(top, red, gold);
+    background:-webkit-linear-gradient(top, red, gold);
+    background:-moz-linear-gradient(top, red, gold);
+    background:-o-linear-gradient(top, red, gold);
+    background:-ms-linear-gradient(top, red, gold);
+}
+
+#submit:hover{
+    margin-left: 41%;
+    margin-top: 3%;
+    width: 21%;
+    height: 46px;
+    font-family: MinecraftTitle;
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 4px;
+    border: 2px solid black;
+    
+    cursor: pointer;
+    background:linear-gradient(top, #b50400, #c1a100);
+    background:-webkit-linear-gradient(top, #b50400, #c1a100);
+    background:-moz-linear-gradient(top, #b50400, #c1a100);
+    background:-o-linear-gradient(top, #b50400, #c1a100);
+    background:-ms-linear-gradient(top, #b50400, #c1a100);
+}

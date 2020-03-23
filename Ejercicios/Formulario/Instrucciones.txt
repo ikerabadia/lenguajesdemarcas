@@ -1,0 +1,5 @@
+Un formulario que tiene:
+	- Todos los controles que hemos visto, inpout text, input password, input date, 
+	    email, radio button, checkbox y un wysiwyg.
+	- El formulario sirve para vender algo a alguien, es decir, que tienes que elegir varias opciones, dar datos personales,
+	  ser bonito, relacionado con un producto de consumo cualquiera

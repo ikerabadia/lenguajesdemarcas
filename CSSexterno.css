@@ -175,9 +175,7 @@ p{
 /*LINKS*/
 
 a:link {
-  color: blue;
   background-color: transparent;
-  text-decoration: underline;
   margin-left: 20px;
 }
 
@@ -248,6 +246,7 @@ a:active {
 #span{
     background-color: lime;
 }
+
 /*Botones*/
 .boton{
     font-family: sans-serif;

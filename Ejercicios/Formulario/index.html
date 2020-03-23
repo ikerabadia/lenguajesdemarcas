@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>.- IkerAbadia_Formulario -.</title>
+    <meta charset="UTF-8">
+    <link type="text/css" href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({selector:'#textarea'});</script>
+    </head>
+    <body>
+        <div id="tituloTopDiv">
+            <h1 id="tituloTop">personaliza tu servidor a tu gusto</h1>
+        </div>
+            
+        <div>
+            <form id="formulario" name="formulario">
+                <div id="credenciales">
+                    <p id = "formulariop">Establece los credenciales de administrador a continuacion:</p>
+                        <label for="username">Nombre de usuario:</label>
+                        <input type="text" id="username" name="username"><br>
+                        <label for="password">Contraseña de administrador:</label>
+                        <input type="password" id="password" name="password"><br>
+                        <label for="password2">Repita la contraseña:</label>
+                        <input type="password" id="password2" name="password2"><br>
+                        <label for="email">Introduzca el email del administrador:</label>
+                        <input type="email" id="email" name="email">
+                </div>
+                
+                <div id="fecha">
+                    <p>Introduzca la fecha hasta la que quiere que dure su servidor online, este tiempo podra ser ampliado mas tarde.</p>
+                        <label for="fechafin">Fecha de alta</label><br>
+                        <input type="date" id="fechafin" name="fechafin"><br>
+                </div>    
+                
+                <div id="memoria">
+                    <p>Elija la cantidad de memoria RAM de la que quiere que disponga su servidor:</p>
+                        <input type="radio" id="2gb" name="RAM" value="2GB">
+                        <label for="2gb">2GB</label><br>
+                        <input type="radio" id="4gb" name="RAM" value="4GB">
+                        <label for="4gb">4GB</label><br>
+                        <input type="radio" id="8gb" name="RAM" value="8GB">
+                        <label for="8gb">8GB</label><br>
+                        <input type="radio" id="ilimitada" name="RAM" value="ILIMITADA">
+                        <label for="ilimitada">ILIMITADA</label><br>
+                </div>
+                
+                <div id="jugadores">
+                    <p>Indique la cantidad de jugadores aproximada que jugaran en este servidor</p>
+                        <input type="radio" id="5p" name="jugadores" value="1 - 5">
+                        <label for="5p">1 - 5</label><br>
+                        <input type="radio" id="20p" name="jugadores" value="6 - 20">
+                        <label for="20p">6 - 20</label><br>
+                        <input type="radio" id="50p" name="jugadores" value="21 - 50">
+                        <label for="50p">21 - 50</label><br>
+                        <input type="radio" id="100p" name="jugadores" value="51 - 100">
+                        <label for="100p">51 - 100</label><br>
+                        <input type="radio" id="1000p" name="jugadores" value="100+">
+                        <label for="1000p">100+</label><br>
+                </div>
+                
+                <div id = "functions">
+                    <p>Indique las funcionalidades que quiere agregar a su servidor:</p>
+                        <input type="checkbox" id="forge" name="funcionalidades" value="forge">
+                        <label for="forge">Mods Forge</label><br>
+                        <input type="checkbox" id="plugins" name="funcionalidades" value="plugins">
+                        <label for="plugins">Plugins</label><br>
+                        <input type="checkbox" id="ddos" name="funcionalidades" value="ddos">
+                        <label for="ddos">Proteccion contra ataques ddos</label><br>
+                        <input type="checkbox" id="backup" name="funcionalidades" value="backup">
+                        <label for="backup">Copias de seguridad automaticas</label><br>
+                        <input type="checkbox" id="database" name="funcionalidades" value="database">
+                        <label for="database">Acceso a la base de datos</label><br>
+                </div>
+                
+                <div id="areaTexto">
+                    <p>Escribe a continuacion las cosas que creas que debemos saber y no has podido indicar anteriormente:</p>
+                    <textarea id="textarea"></textarea>
+                </div>                
+                
+                <a id="submit" onclick="document.forms.formulario.submit()">submit</a>
+                
+            </form>
+        </div>
+    </body>
+</html>
