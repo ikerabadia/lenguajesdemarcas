@@ -3,10 +3,14 @@ p{
     color: white;
     font-family:  Arial Rounded MT Bold; 
 }
-h1,h2,h3,h4,h5,h6{
+h1,h3,h4,h5,h6{
     color: #ffb31a;
     font-family: Berlin Sans FB Demi;
     text-align: center;
+}
+h2{
+    color: #ffb31a;
+    font-family: Berlin Sans FB Demi;
 }
 li{
     color: #ffb31a;
