@@ -49,7 +49,7 @@
             </div>
          </main>
         
-        <p>Esta página se editó por ultima vez el <span style="color:red">6 mar 2020 a las 18:34</span>.</p>
+        <p>Esta página se editó por ultima vez el 6 mar 2020 a las 18:34.</p>
         <hr>
         
         <div id="segundaParte">
@@ -59,7 +59,7 @@
                 <h5>SEGUNDA PARTE</h5>
                 <h6>SEGUNDA PARTE</h6>
                 
-                <h2>Un pequeño indice a los sitios importantes</h2>
+                <h2>Un pequeño indice a los sitios <span style="color:red">importantes</span></h2>
                 <nav>
                   <a href="#navegadores">Navegadores</a> |<br>
                   <a href="#ragnarosFoto">Foto de Ragnaros</a> |<br>
@@ -105,6 +105,37 @@
                             <label for="alamuerte">Alamuerte</label><br>
                             <input type="radio" id="arthas" name="perpref" value="Arthas">
                             <label for="arthas">Arthas</label><br>
+                     
+                       <label for="razas">Elige tu raza preferida:</label>
+                        <select id="razas">
+                          <option value="Humano">Humano</option>
+                          <option value="Orco">Orco</option>
+                          <option value="ElfoDeSangre">Elfo de sangre</option>
+                          <option value="CazaDemonios">CazaDemonios</option>
+                        </select> 
+                    
+                        <p>Ahora elige una clase</p>
+                         
+                        <input list="clase">                    
+                        <datalist id="clase" name="clase">
+                            <option value="Cazador">                          
+                            <option value="Brujo">
+                            <option value="Mago">                            
+                            <option value="Asesino">
+                            <option value="Guerrero">                            
+                        </datalist> 
+                    
+                         <label for="enemigos">Elige un enemigo</label>
+                            <select id="enemigos">
+                              <optgroup label="Grandes">
+                                <option value="alamuerte">Alamuerte</option>
+                                <option value="Ragnaros">Ragnaros</option>
+                              </optgroup>
+                              <optgroup label="pequeños">
+                                <option value="rey exanime">Rey exanime</option>
+                                <option value="Argus">Argus</option>
+                              </optgroup>
+                            </select> 
 
                         <p>¿Por que recomendarias, o no, este juego?</p>
                         <textarea name="recomendacion"></textarea>
